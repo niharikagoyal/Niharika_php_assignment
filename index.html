@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="form1.css">
+  <title>Form</title>
+</head>
+<body>
+  <h3>
+    <form action="form1.php" method="post" enctype="multipart/form-data" class="form">
+      Name: <input type="text" name="fname" placeholder="First name" required>
+      <input type="text" name="lname" placeholder="Last name" required><br><br>
+      Date of Birth: <input type="date" name="dob" /><br><br>
+      Gender <input type="radio" name="gender" value="Male" />Male
+      <input type="radio" name="gender" value="Female" checked/>Female<br><br>
+      Id Proof:
+      <select name="id-proof">
+        <option value="Aadhar Card">Aadhar Card</option>
+        <option value="License">License</option>
+        <option value="Voter Id">Voter Id</option>
+        <option value="Pan">Pan</option>
+      </select><br><br>
+      Upload Proof: <input type="file" name="prfile" required><br><br>
+      Upload Image: <input type="file" name="imgfile" required><br><br>
+      <input type="submit" name="submit" />
+      <input type="reset" name="reset" />
+    </form>
+  </h3>
+</body>
+</html>
